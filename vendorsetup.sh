@@ -1,0 +1,4 @@
+add_lunch_combo skk_mako-userdebug
+add_lunch_combo skk_hammerhead-userdebug
+add_lunch_combo skk_flo-userdebug
+
