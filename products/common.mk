@@ -24,7 +24,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Needed packages
 PRODUCT_PACKAGES += \
-    Stk 
+    Stk \
+	libsepol \
+	busybox
 
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS :=  vendor/simplekitkat/overlay $(PRODUCT_PACKAGE_OVERLAYS)
