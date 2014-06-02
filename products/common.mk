@@ -26,7 +26,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Stk \
 	libsepol \
-	busybox
+	Busybox
 
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS :=  vendor/simplekitkat/overlay $(PRODUCT_PACKAGE_OVERLAYS)
@@ -59,3 +59,12 @@ PRODUCT_COPY_FILES += \
 
 # Inherit kitkat audio package.
 $(call inherit-product, vendor/simplekitkat/products/kitkataudio.mk)
+
+# Versioning System
+PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MINOR = 0
+
+SKK_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(BUILD_NUMBER)-$(shell date -u +%Y%m%d)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.simplekitkat.version=$(SKK_VERSION)
