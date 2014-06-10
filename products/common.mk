@@ -62,7 +62,7 @@ $(call inherit-product, vendor/simplekitkat/products/kitkataudio.mk)
 
 # Versioning System
 PRODUCT_VERSION_MAJOR = 1
-PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MINOR = 1
 
 SKK_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(BUILD_NUMBER)-$(shell date -u +%Y%m%d)
 
