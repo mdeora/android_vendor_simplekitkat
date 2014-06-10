@@ -26,7 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Stk \
 	libsepol \
-	Busybox
+	Busybox \
+    Email \
+    Exchange2 
 
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS :=  vendor/simplekitkat/overlay $(PRODUCT_PACKAGE_OVERLAYS)
